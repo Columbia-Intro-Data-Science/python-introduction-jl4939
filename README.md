@@ -2,3 +2,6 @@
 python-introduction-jl4939 created by GitHub Classroom
 
 This repo is to upload Homework for APMA4990
+
+Junru Li 
+UNI: jl4939
