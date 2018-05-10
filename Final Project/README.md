@@ -7,6 +7,7 @@
 ### Huize Yan (hy2523)
 
 Folder 'jpnotebook' is my (Junru) analysis of "User/User Cosine Similiary"
+
 Folder 'web_app' is the codebase of our website (URL: http://jl4939.pythonanywhere.com/)
 
 Because final website is based on my (Junru) Pythonanywhere account, I (Junru) did the assembling work and debuging work at Pythonanywhere.com
