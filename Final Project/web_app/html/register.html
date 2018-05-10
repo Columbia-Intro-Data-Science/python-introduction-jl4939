@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% macro render_field(field) %}
+
+    <dt>{{ field.label }}
+    <dd>{{ field(**kwargs)|safe }}
+    {% if field.errors %}
+        <ul class=errors>
+        {% for error in field.errors %}
+            <li>{{ error }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+    </dd>
+
+{% endmacro %}
+
+
+{% block body %}
+
+<div class="container">
+
+<div class="w3-container w3-padding-32" id="contact">
+
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Register</h3>
+    <br>
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+            <p><b>{{message}}</b></p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <form method="post" action="/register/">
+        <dl>
+            {{ render_field(form.username) }}
+            {{ render_field(form.email) }}
+            {{ render_field(form.password) }}
+            {{ render_field(form.confirm) }}
+            {{ render_field(form.accept_tos) }}
+        </dl>
+        <p><input type="submit" value="Register"></p>
+    </form>
+
+    {% if error %}
+        <p>Error: {{ error }}</p>
+    {% endif %}
+
+</div>
+
+</div>
+
+{% endblock %}

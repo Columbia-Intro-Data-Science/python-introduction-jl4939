@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<title>AMPA 4990</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/css/w3.css">
+<link rel="shortcut icon" href="/static/img/index/columbia-uni.png">
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="/" class="w3-bar-item w3-button"><b>GO</b> Home</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+
+      <a href="/recommend/" class="w3-bar-item w3-button">Recommend</a>
+      <a href="/social/" class="w3-bar-item w3-button">Social</a>
+      <a href="/all_data/" class="w3-bar-item w3-button">All Data</a>
+
+      {% if session.logged_in %}
+        <a href="/profile/" class="w3-bar-item w3-black w3-button">Profile</a>
+        <a href="/logout/" class="w3-bar-item w3-black w3-button">Logout</a>
+      {% else %}
+        <a href="/login/" class="w3-bar-item w3-black w3-button">Login</a>
+        <a href="/register/" class="w3-bar-item w3-black w3-button">Sign up</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="/static/img/bg03.jpeg" alt="" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><a href="/recommend/"><b>Try!</b></a></span> <span class="w3-hide-small w3-text-light-grey">Broadcaster Recommend & Social</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Project</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Douyu</div>
+        <img src="/static/img/index/douyu.png" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Huya</div>
+        <img src="/static/img/index/huya.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Zhanqi</div>
+        <img src="/static/img/index/zhanqi.png" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Yingke</div>
+        <img src="/static/img/index/yingke.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Technical Assistance -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Technical Assistance</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding"><a href="http://flask.pocoo.org/">Flask</a></div>
+        <img src="/static/img/index/flask.png" alt="" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding"><a href="https://getbootstrap.com/">Bootstrap</a></div>
+        <img src="/static/img/index/bootstrap.png" alt="" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding"><a href="hhttp://jinja.pocoo.org/docs/2.10/">Jinja2</a></div>
+        <img src="/static/img/index/jinja2.png" alt="" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding"><a href="https://pythonprogramming.net/">PythonProgramming</a></div>
+        <img src="/static/img/index/python_programming.png" alt="" style="width:100%">
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+
+  <div class="w3-row-padding">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Team</h3>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/static/img/team/junru_r2.png" alt="" style="width:100%">
+      <h3>Junru Li</h3>
+      <p class="w3-opacity">Designer</p>
+      <p>Hello everyone!</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact Info</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/static/img/team/dianwen_r2.png" alt="" style="width:100%">
+      <h3>Dianwen Jin</h3>
+      <p class="w3-opacity">Designer</p>
+      <p>Hello everyone!</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact Info</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/static/img/team/yimin_r.png" alt="" style="width:100%">
+      <h3>Yimin Ma</h3>
+      <p class="w3-opacity">Designer</p>
+      <p>Hello everyone!</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact Info</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/static/img/team/huize_r.png" alt="" style="width:100%">
+      <h3>Huize Yan</h3></h3>
+      <p class="w3-opacity">Designer</p>
+      <p>Hello everyone!</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact Info</button></p>
+    </div>
+  </div>
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Copyright ©2018 COLUMBIA UNIVERSITY. All rights reserved.</p>
+  <p>Powered by “Fantastic Four” Group :)</p>
+</footer>
+
+
+
+</body>
+</html>

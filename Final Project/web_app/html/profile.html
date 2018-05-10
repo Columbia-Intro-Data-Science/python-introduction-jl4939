@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<div class="container">
+
+<div class="w3-container w3-padding-32" id="contact">
+
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Profile of {{ profile_username }}</h3>
+    <br>
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+            <p><b>{{message}}</b></p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <p>Username: {{ profile_username }}</p>
+    <br>
+    <p>Email: {{ profile_email }}</p>
+    <br>
+    <p>3 Liked Broadcasters' Rank: {{ profile_settings }}</p>
+
+
+</div>
+
+</div>
+
+{% endblock %}
